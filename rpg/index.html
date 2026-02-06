@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>Gerador de personagens </h1>
+   <h4><label for="nome">Nome:</label> 
+<input type="text" id="nome" name="nome" placeholder="Digite o nome">
+<br>
+<br>
+      <!-- Seleção das classes -->
+    <h4><label for="personagem"> Escolha as classes:</label><br>
+    <select id="personagem" multiple size="3" style="width: 180px">
+        <option value="Bruxo">🪄 Bruxo</option>
+        <option value="Mago">🧙‍♂️ Mago</option>
+        <option value="Arqueiro">🏹 Arqueiro</option>
+        <option value="Guerreiro">⚔️ Guerreiro</option>
+    </select><br>
+    <small>Use sua personalidade para escolher</small><br><br>
+
+    <h4><label for="escolha">Escolha uma Habilidade:</label>
+<select id="escolha" name="opcoes">
+  <option value="op1">Força</option>
+  <option value="op2">Inteligencia</option>
+  <option value="op3">Agilidade</option>
+  <option value="op4">Sabedoria</option>
+</select>
+<br>
+<br>
+<label for="descricao">Quer adicionar mais caracteristica?</label><br>
+<textarea id="descricao" name="descricao" rows="5" cols="40" placeholder="Digite a descrição aqui..."></textarea>
+
+<button onclick="gerarPersonagem()">Criar Herói</button>
+
+    <p id="resultado"></p>
+
+    <button id="novo" onclick="limpar()" style="display:none;">
+      Gerar outro herói
+    </button>
+  </div>
+
+ <script src="js.js"></script>
+</body>
+</html>
